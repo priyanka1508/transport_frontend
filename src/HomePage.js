@@ -96,7 +96,7 @@ export default function HomePage() {
                     {/* Logo badge */}
                     <div className="grid place-items-center h-11 w-11 md:h-12 md:w-12 rounded-full bg-amber-500 ring-1 ring-amber-300/60 shadow-sm">
                         <img
-                            src="/assets/images/logo.png"
+                            src="/assets/images/logo01.png"
                             alt="JK Logo"
                             className="h-7 w-7 md:h-8 md:w-8 invert"
                         />
