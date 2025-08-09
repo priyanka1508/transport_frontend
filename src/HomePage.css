@@ -1,0 +1,28 @@
+/* Base header styles */
+.navbar {
+    @apply flex items-center justify-between px-6 py-6 sticky top-0 z-50 transition-all duration-300;
+    background-color: #ebf3f2b3;
+    border-bottom: 1px solid #eee;
+}
+
+/* When scrolled, apply transparency and blur */
+.navbar.scrolled {
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+html {
+    scroll-behavior: smooth;
+    /* ~6.5rem ≈ 104px: tune if your header height changes */
+    scroll-padding-top: 6.5rem;
+}
+
+/* Slightly smaller on mobile if your header shrinks */
+@media (max-width: 767px) {
+    html {
+        scroll-padding-top: 5.25rem;
+        /* ~84px */
+    }
+}
